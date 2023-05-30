@@ -1,0 +1,163 @@
+/* TYPOGRAPHY
+------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+/*
+  - Font sizes (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* WHITESPACE
+------------------------------------*/
+
+/*
+  - Spacing system (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* GLOBAL STYLES
+------------------------------------*/
+
+:root {
+  /* Colors */
+  --primary-color: #32457e;
+  --secondary-color: #f0f3f5;
+  --color-1: #e0e3e6;
+  --color-2: #fdd462;
+  --color-3: #111;
+  --color-4: #333;
+  --color-5: #1d1a2d;
+  --grey-color-1: #555;
+
+  /* Font family */
+  --main-font-family: "Open Sans", sans-serif;
+
+  /* Font weight */
+  --font-weight-default: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  /* Shadows */
+  --box-shadow: 7px 0 60px rgba(0, 0, 0, 0.05);
+
+  /* Border radius */
+  --border-radius-small: 9px;
+  --border-radius-default: 30px;
+
+  /* Line height */
+  --line-height-default: 1;
+  --line-height-small: 1.05;
+  --line-height-medium: 1.6;
+
+  /* Letter spacing */
+  --letter-spacing-default: -0.5px;
+  --letter-spacing-medium: 0.75px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: var(--main-font-family);
+  line-height: var(--line-height-default);
+  font-weight: var(--font-weight-default);
+  color: var(--color-5);
+  transition: 1.5s;
+}
+
+/* Dark/Light mode */
+
+.night-toggle {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.moon {
+  background-color: transparent;
+  box-shadow: -5px 1px 0 1px var(--color-5);
+  border-left: 3px solid var(--color-5);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  margin-top: 0px;
+  transition: 2s;
+}
+
+.sun {
+  background-color: var(--color-2);
+  box-shadow: 1px 0px 0px 1px var(--color-2);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: 2s;
+}
+
+/* HEADING STYLES
+------------------------------------*/
+
+.primary-heading,
+.secondary-heading,
+.tertiary-heading {
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-default);
+}
+
+.primary-heading {
+  font-size: 5.2rem;
+  line-height: var(--line-height-small);
+  margin-bottom: 3.2rem;
+}
+
+.secondary-heading {
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+.tertiary-heading {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+/* OTHER BASIC STYLES
+------------------------------------*/
+
+a {
+  text-decoration: none;
+  color: var(--color-5);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/*
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: var(--secondary-color);
+  border-bottom: 1px solid transparent;
+}
+*/

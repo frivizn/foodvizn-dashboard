@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="description"
+      content="Dashboard panel for administering food ordering." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon/favicon.png" />
+
+    <!-- Apple Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <title>FoodVizn &mdash; Admin Dasboard</title>
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <link id="theme-style" rel="stylesheet" href="" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo/logo.png" alt="Logo icon" />
+          <span class="logo-text">FoodVizn</span>
+        </a>
+      </div>
+      <div class="header-center">
+        <span class="menu-icon"><i class="fa-solid fa-bars"></i></span>
+
+        <div class="search-container">
+          <input type="text" class="search-term" placeholder="Search.." />
+          <button type="submit" class="search-button">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="night-toggle">
+          <div id="moon" class="moon"></div>
+        </div>
+        <span><i class="fa-solid fa-bell"></i></span>
+        <span class="login">
+          Log in
+          <!-- <i class="fa-solid fa-user"></i> -->
+        </span>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav>
+          <ul class="menu-items">
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-users"></i><span>Users</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-cart-shopping"></i
+                ><span>Customers</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-list"></i><span>Menu</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-square-poll-vertical"></i
+                ><span>Overview</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-circle-info"></i><span>Help</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-gear"></i><span>Settings</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main panel -->
+      <section class="main-panel">
+        <div class="main-panel--overview">
+          <!-- Main panel cards -->
+          <div class="main-panel--card ravenue">
+            <div class="total-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="total-header">Total Ravenue</div>
+            <div class="total-number">$19.15K</div>
+          </div>
+          <div class="main-panel--card total-order">
+            <div class="total-icon">
+              <i class="fa-solid fa-list"></i>
+            </div>
+            <div class="total-header">Total Order</div>
+            <div class="total-number">1986</div>
+          </div>
+          <div class="main-panel--card delivered">
+            <div class="total-icon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="total-header">Total Delivered</div>
+            <div class="total-number">1850</div>
+          </div>
+          <div class="main-panel--card pending">
+            <div class="total-icon">
+              <i class="fa-solid fa-hourglass-start"></i>
+            </div>
+            <div class="total-header">Pending</div>
+            <div class="total-number">78</div>
+          </div>
+
+          <!-- Menu -->
+          <div class="main-panel--card menu">
+            <h2>Menu</h2>
+            <div class="order-details">
+              <div class="main-panel--menu">
+                <img src="img/menu/menu-item-1.jpg" alt="Burger with fries" />
+                <p>Burger with fries</p>
+                <p>$12.99</p>
+              </div>
+              <div class="main-panel--menu">
+                <img src="img/menu/menu-item-1.jpg" alt="Burger with fries" />
+                <p>Burger with fries</p>
+                <p>$12.99</p>
+              </div>
+              <div class="main-panel--menu">
+                <img src="img/menu/menu-item-1.jpg" alt="Burger with fries" />
+                <p>Burger with fries</p>
+                <p>$12.99</p>
+              </div>
+              <div class="main-panel--menu">
+                <img src="img/menu/menu-item-1.jpg" alt="Burger with fries" />
+                <p>Burger with fries</p>
+                <p>$12.99</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent orders -->
+          <div class="main-panel--card recent-orders">
+            <h2>Recent Orders</h2>
+            <!-- Recent orders table -->
+            <div class="main-panel--table">
+              <table class="table">
+                <tr>
+                  <th>Order No.</th>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>Tel.</th>
+                  <th>Payment</th>
+                  <th>Del. Status</th>
+                  <th>Pay. Status</th>
+                  <th>Date/Time</th>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+                <tr>
+                  <td>#2453</td>
+                  <td>Peter</td>
+                  <td>Main St. 123</td>
+                  <td>555-5555-555</td>
+                  <td>Cash</td>
+                  <td>Delivered</td>
+                  <td>Paid</td>
+                  <td>20.04 16:30</td>
+                </tr>
+              </table>
+
+              <div class="pagination">
+                <div><i class="fa-solid fa-angle-left"></i></div>
+                <div class="page-numbers">1 2 3 ... 23</div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Order details -->
+          <div class="main-panel--card order-summary">
+            <h2>Order Details</h2>
+            <div class="order-details">
+              <p>#2453</p>
+              <div class="main-panel--menu">
+                <img src="img/menu/menu-item-1.jpg" alt="Burger with fries" />
+                <p>Burger with fries<br /><span>$12.99</span></p>
+                <p><i class="fa-solid fa-plus"></i></p>
+                <p><i class="fa-solid fa-minus"></i></p>
+              </div>
+              <div class="main-panel--menu">
+                <img src="img/menu/menu-item-1.jpg" alt="Burger with fries" />
+                <p>Burger with fries<br /><span>$12.99</span></p>
+                <p><i class="fa-solid fa-plus"></i></p>
+                <p><i class="fa-solid fa-minus"></i></p>
+              </div>
+              <div class="main-panel--menu">
+                <img src="img/menu/menu-item-1.jpg" alt="Burger with fries" />
+                <p>Burger with fries<br /><span>$12.99</span></p>
+                <p><i class="fa-solid fa-plus"></i></p>
+                <p><i class="fa-solid fa-minus"></i></p>
+              </div>
+              <div class="main-panel--menu">
+                <img src="img/menu/menu-item-1.jpg" alt="Burger with fries" />
+                <p>Burger with fries<br /><span>$12.99</span></p>
+                <p><i class="fa-solid fa-plus"></i></p>
+                <p><i class="fa-solid fa-minus"></i></p>
+              </div>
+            </div>
+            <p class="total-price">Total price: $96.95</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>Frivizn Studio &copy; 2023</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

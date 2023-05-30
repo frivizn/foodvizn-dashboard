@@ -1,0 +1,31 @@
+body {
+  background-color: var(--color-5);
+}
+
+a,
+.menu-icon,
+.fa-bell,
+.login,
+.footer {
+  color: var(--secondary-color);
+}
+
+.main-panel {
+  background-color: var(--color-4);
+  color: var(--secondary-color);
+}
+
+.main-panel--card,
+.sidebar {
+  background-color: var(--color-3);
+  color: var(--secondary-color);
+}
+
+.table tr th,
+.table tr td {
+  color: var(--secondary-color);
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-4);
+}
